@@ -146,10 +146,6 @@ footer a {
 
 /* 📱 PARA CELULARES (Até 480px) */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 20px;
-  }
-
   .busca {
     flex-direction: column; /* Coloca o botão embaixo do input */
   }
