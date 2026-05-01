@@ -4,6 +4,10 @@ Uma aplicação web moderna e responsiva que utiliza a API oficial do GitHub par
 
 ---
 
+## Live Demo
+https://jefersonpimentel.github.io/buscador-perfil-github/
+
+
 ## 🚀 Demonstração
 
 O projeto permite que o usuário digite um username e visualize em tempo real:
