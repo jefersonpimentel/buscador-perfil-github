@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Buscador de Perfil GitHub</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔍 Buscar Devs</h1>
+
+      <div class="busca">
+        <input
+          type="text"
+          id="input-usuario"
+          placeholder="Digite o usuário do GitHub..."
+        />
+        <button id="btn-buscar">Buscar</button>
+      </div>
+
+      <!-- Mensagem de erro para usuario não encontrado -->
+      <div id="user-not-found" class="erro-box">Usuário não encontrado! 🕵️‍♂️</div>
+
+      <!-- Mensagem de erro para quando o usuario não digitar nada  -->
+      <div id="look-for-user" class="erro-box">Procure por um usuário 🔍</div>
+
+      <!-- O cartão onde os dados vão aparecer -->
+      <div id="cartao-usuario" class="cartao">
+        <img id="foto-perfil" src="" alt="Foto do Usuário" />
+        <h2 id="nome-usuario">Nome do Dev</h2>
+        <p id="bio-usuario">Aqui vai a biografia do desenvolvedor...</p>
+
+        <div class="info-numeros">
+          <span
+            ><strong>Seguidores:</strong> <span id="seguidores">0</span></span
+          >
+          <span><strong>Repositórios:</strong> <span id="repos">0</span></span>
+        </div>
+
+        <a id="link-github" href="#" target="_blank" rel="noopener noreferrer"
+          >Ver Perfil Completo</a
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

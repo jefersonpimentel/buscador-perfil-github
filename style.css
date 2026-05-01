@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background-color: #0d1117; /* Fundo escuro oficial do GitHub */
+  color: #c9d1d9;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.busca {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background-color: #0d1117;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border-color: #58a6ff; /* Brilha azul ao clicar no campo */
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #238636; /* Verde do botão 'New' do GitHub */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.1s active;
+}
+
+button:hover {
+  background-color: #2ea043;
+}
+
+button:active {
+  transform: scale(0.98); /* Efeito de apertar o botão */
+}
+
+.erro-box {
+  background-color: #f85149; /* Vermelho GitHub */
+  color: black;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: none; /* Começa invisível */
+}
+
+.cartao {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 30px;
+  display: none; /* Começa escondido */
+}
+
+#foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #30363d;
+  margin-bottom: 15px;
+}
+
+.info-numeros {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  background: #0d1117;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#link-github {
+  display: inline-block;
+  margin-top: 15px;
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+#link-github:hover {
+  text-decoration: underline;
+}
+
+/* 💻 PARA NOTEBOOKS E TELAS GRANDES (Ajuste de refinamento) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 600px; /* Dá um pouco mais de espaço */
+  }
+}
+
+/* 📑 PARA TABLETS (Até 768px) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 30px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .info-numeros {
+    gap: 10px;
+  }
+}
+
+/* 📱 PARA CELULARES (Até 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .busca {
+    flex-direction: column; /* Coloca o botão embaixo do input */
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px; /* Botão maior para facilitar o toque */
+  }
+
+  input {
+    width: 100%;
+    font-size: 16px; /* Evita que o iPhone dê zoom automático no input */
+  }
+
+  .cartao {
+    padding: 20px 15px;
+  }
+
+  #foto-perfil {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info-numeros {
+    flex-direction: column; /* Seguidores e Repos um embaixo do outro */
+    gap: 15px;
+  }
+}
