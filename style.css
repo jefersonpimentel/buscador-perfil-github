@@ -111,6 +111,17 @@ button:active {
   text-decoration: underline;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #238636;
+}
+
 /* 💻 PARA NOTEBOOKS E TELAS GRANDES (Ajuste de refinamento) */
 @media (max-width: 1024px) {
   .container {

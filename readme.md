@@ -4,7 +4,7 @@ Uma aplicação web moderna e responsiva que utiliza a API oficial do GitHub par
 
 ---
 
-## Live Demo
+## 🌐 Live Demo
 https://jefersonpimentel.github.io/buscador-perfil-github/
 
 
